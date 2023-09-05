@@ -66,7 +66,7 @@ body {
   border: none;
   outline: none;
   background-color: white;
-  margin-right: 5px;
+  margin-right: 14px;
   cursor: pointer;
 }
 .toDoContainer {
@@ -78,7 +78,8 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: white;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   margin-top: 1rem;
 }
 .todos {
@@ -93,6 +94,12 @@ body {
   border-bottom: 1px solid hsl(235, 19%, 35%);
   cursor: pointer;
 }
+.noTodos {
+  font-size: 18px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: none;
+}
 .rightTodo {
   display: flex;
   align-items: center;
@@ -103,7 +110,7 @@ body {
   height: 23px;
   border: #d2d2d2 solid 1px;
   border-radius: 20px;
-  margin-left: 26px;
+  margin-left: 31px;
 }
 .writeToDoFormTitle {
   display: flex;
@@ -140,6 +147,9 @@ body {
   /* background: linear-gradient(140deg, #ff6a6a 0%, #e6ff59 40%, #41c4fc 98%);
   background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%); */
 }
+/* .checked {
+  text-decoration: line-through;
+} */
 .checkbox::before {
   content: "";
   position: absolute;
@@ -171,7 +181,6 @@ body {
   cursor: pointer;
   font-size: 30px;
   color: gray;
-  /* font-weight: 100; */
 }
 .footerTodo {
   width: 90%;
@@ -181,7 +190,9 @@ body {
   align-items: center;
   justify-content: space-around;
   color: hsl(235, 19%, 35%);
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
   background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }

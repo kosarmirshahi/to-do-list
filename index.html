@@ -25,33 +25,21 @@
             class="writeToDoInpute"
           />
         </div>
-        <button class="addBtn">&plus;</button>
+        <button class="addBtn" onclick="addTodos()">&plus;</button>
       </form>
       <div class="toDoContainer">
+        <p class="noTodos">No todo items left!</p>
         <!-- // -->
-        <div class="todos">
+        <!-- <div class="todos" id="1">
           <div class="rightTodo">
             <input type="checkbox" class="checkbox" />
-            <p>study book</p>
+            <p>reading</p>
           </div>
           <div><button class="closeBtn">&#215;</button></div>
-        </div>
-
-        <!-- // -->
-        <!-- <div class="todos">
-          <input type="checkbox" class="checkbox" />
-          <p>listen to the music</p>
-          <button class="closeBtn">no</button>
-        </div>
-        <div class="todos">
-          <input type="checkbox" class="checkbox" />
-          <p>going out</p>
-          <button class="closeBtn">no</button>
         </div> -->
       </div>
       <div class="footerTodo">
-        <p>2 items left</p>
-        <p>All</p>
+        <p><span class="numberOfAll"></span> items left</p>
         <p>Active</p>
         <p>Completed</p>
       </div>
