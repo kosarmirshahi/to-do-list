@@ -15,6 +15,24 @@ body {
   margin: auto;
   margin-top: 1.5rem;
 }
+@media screen and (max-width: 1000px) {
+  .section {
+    width: 50%;
+  }
+  body {
+    background-color: hsl(234, 11%, 52%);
+  }
+}
+@media screen and (max-width: 700px) {
+  .section {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section {
+    width: 90%;
+  }
+}
 .header {
   display: flex;
   align-items: center;
@@ -25,15 +43,6 @@ body {
   color: white;
   text-align: start;
   margin-left: 20px;
-}
-.headerImg {
-  width: 30px;
-  height: 30px;
-  margin-right: 50px;
-  cursor: pointer;
-}
-.headerImgSun {
-  display: none;
 }
 #checkImg {
   width: 2rem;
@@ -161,6 +170,7 @@ body {
   margin: 6px 0px 0px 6px;
   text-align: center;
   align-items: center;
+  text-decoration: line-through;
 }
 .checkbox::before {
   display: none;

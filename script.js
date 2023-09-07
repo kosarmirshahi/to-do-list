@@ -8,8 +8,6 @@ const writeToDoForm = document.querySelector(".writeToDoForm");
 const closeBtn = document.querySelector(".closeBtn");
 const numberOfAll = document.querySelector(".numberOfAll");
 const noTodos = document.querySelector(".noTodos");
-const headerImgMoon = document.querySelector(".headerImgMoon");
-const headerImgSun = document.querySelector(".headerImgSun");
 const checkbox = document.querySelector(".checkbox");
 const footer = document.querySelector(".Footer");
 
@@ -79,18 +77,3 @@ function showTodo() {
   todoList.innerHTML = localStorage.getItem("data");
 }
 showTodo();
-headerImgMoon.addEventListener("click", function () {
-  footer.classList.remove("footerTodo");
-  footer.classList.add("footerTodoBlack");
-  body.style.backgroundColor = "hsl(235, 21%, 11%)";
-  writeToDoForm.style.backgroundColor = "hsl(235, 24%, 19%)";
-  insertInput.style.backgroundColor = "hsl(235, 24%, 19%)";
-  addBtn.style.backgroundColor = "hsl(235, 24%, 19%)";
-  addBtn.style.color = "white";
-  todoList.style.backgroundColor = "hsl(235, 24%, 19%)";
-  checkbox.style.backgroundColor = "hsl(235, 24%, 19%)";
-  closeBtn.style.backgroundColor = "red";
-  footer.style.backgroundColor = "hsl(235, 24%, 19%)";
-  headerImgMoon.style.display = "none";
-  headerImgSun.style.display = "block";
-});
