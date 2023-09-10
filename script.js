@@ -1,17 +1,11 @@
 "use srtict";
-const body = document.body;
 const addBtn = document.querySelector(".addBtn");
 const insertInput = document.querySelector(".writeToDoInpute");
 const todoList = document.querySelector(".toDoContainer");
-const todoElements = document.querySelectorAll(".todos");
-const writeToDoForm = document.querySelector(".writeToDoForm");
 const closeBtn = document.querySelector(".closeBtn");
 const numberOfAll = document.querySelector(".numberOfAll");
 const noTodos = document.querySelector(".noTodos");
 const checkbox = document.querySelector(".checkbox");
-const footer = document.querySelector(".Footer");
-
-footer.classList.add("footerTodo");
 
 let alltodos = [];
 let allremoveTodos = [];
@@ -61,10 +55,10 @@ todoList.addEventListener(
   function (e) {
     if (e.target.tagName === "INPUT") {
       e.target.classList.toggle("checked");
+      e.target.nextElementSibling.classList.toggle("textCheck");
       saveData();
     } else if (e.target.tagName === "BUTTON") {
       e.target.parentElement.parentElement.remove();
-      // alltodos.pop();
       saveData();
     }
   },
